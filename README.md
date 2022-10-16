@@ -3,7 +3,7 @@ Hey wave everyone , hacktoberfest is back with biggest beginners friendly openso
 
 What you need to do in this event?
 
-You need to generate 4 valid pull request and want to contribute in opensource
+
 
 let's discuss how you can contribute in hacktoberfest 2021 raised_hands
 
