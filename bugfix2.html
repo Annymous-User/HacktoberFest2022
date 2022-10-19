@@ -1,0 +1,258 @@
+[10:05 PM, 6/21/2022] Sayeed:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>CARD-9</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Quicksand", sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 40px;
+            min-height: 100vh;
+            background-color: beige;
+            padding: 50px;
+        }
+        
+        .main {
+            position: relative;
+            width: 300px;
+            height: 350px;
+        }
+        
+        .main:hover .content {
+            transform: translateX(70%) translateY(10px);
+        }
+        
+        .main:hover .pic {
+            transform: translateX(-20%) translateY(-10px);
+        }
+        
+        .main .pic {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            border-radius: 10px;
+            transition: 0.7s;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.543);
+        }
+        
+        .main .pic img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .main .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(97, 226, 241);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            transition: 0.7s;
+            color: white;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.377);
+            transform: rotate(180deg) translate(5px) translateY(5px);
+        }
+        
+        .main:nth-child(2) .content {
+            background-color: pink;
+        }
+        
+        .main:nth-child(3) .content {
+            background-color: rgb(158, 248, 98);
+        }
+        
+        .main:nth-child(4) .content {
+            background-color: rgb(121, 98, 248);
+        }
+        
+        .main .content h1 {
+            font-size: 2.5em;
+            color: rgba(25, 25, 58, 0.779);
+            margin-bottom: -30px;
+            text-transform: uppercase;
+        }
+        
+        .main .content b {
+            font-size: 1em;
+            color: rgba(46, 16, 52, 0.655);
+            margin-top: -10px;
+            text-transform: capitalize;
+        }
+        
+        .main .content p {
+            font-weight: 300;
+            color: rgb(49, 48, 48);
+            margin-bottom: -20px;
+            margin-top: -20px;
+        }
+        
+        .main .content .icons {
+            width: 100%;
+            margin-bottom: -20px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .main .content .icons i {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 2em;
+            transition: 0.5s;
+        }
+        
+        .main .content .icons i:hover {
+            background-color: red;
+            color: black;
+            transform: scale(1.1);
+        }
+        
+        button {
+            margin-top: -5px;
+            margin-bottom: -30px;
+            font-size: 1.2em;
+            text-transform: capitalize;
+            font-weight: 300;
+            padding: 5px;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            background-color: rgb(97, 226, 241);
+            box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.356), 2px 2px 4px rgba(0, 0, 0, 0.329);
+        }
+        
+        button:active {
+            box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.356), inset 2px 2px 4px rgba(0, 0, 0, 0.329);
+        }
+        
+        .main:nth-child(2) button {
+            background-color: pink;
+        }
+        
+        .main:nth-child(3) button {
+            background-color: rgb(158, 248, 98);
+        }
+        
+        .main:nth-child(4) button {
+            background-color: rgb(121, 98, 248);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="pic">
+            <img src="001.jpeg" alt="" id="image">
+        </div>
+        <div class="content">
+            <h1>lisa</h1>
+            <b>blackpink member</b>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui magni hic blanditiis, at debitis cupiditate facilis velit, libero aliquid nobis veniam in modi possimus praesentium voluptatem? Tempora, accusantium placeat.</p>
+            <button class="button">learn more</button>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="pic">
+            <img src="003.jpeg" alt="">
+        </div>
+        <div class="content">
+            <h1>jennie</h1>
+            <b>blackpink member</b>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui magni hic blanditiis, at debitis cupiditate facilis velit, libero aliquid nobis veniam in modi possimus praesentium voluptatem? Tempora, accusantium placeat.</p>
+            <button>learn more</button>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="pic">
+            <img src="002.jpeg" alt="">
+        </div>
+        <div class="content">
+            <h1>rose</h1>
+            <b>blackpink member</b>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui magni hic blanditiis, at debitis cupiditate facilis velit, libero aliquid nobis veniam in modi possimus praesentium voluptatem? Tempora, accusantium placeat.</p>
+            <button>learn more</button>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="pic">
+            <img src="neymar (2).jpeg" alt="">
+        </div>
+        <div class="content">
+            <h1>neymar</h1>
+            <b>brazilian footballer</b>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui magni hic blanditiis, at debitis cupiditate facilis velit, libero aliquid nobis veniam in modi possimus praesentium voluptatem? Tempora, accusantium placeat.</p>
+            <button>learn more</button>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+    </script>
+
+
+</body>
+
+</html>
